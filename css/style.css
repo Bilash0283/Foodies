@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+/* Option 2: Import via CSS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+:after,
+:before{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:active,
+:hover,
+:focus{
+    outline:0 !important;
+    outline-offset: 0;
+}
+
+a:hover {
+    color:var(--primary-color)!important;
+}
+ul,
+ol{
+    margin: 0;
+    padding:0;
+}
+/* Define Veriable*/
+:root{
+    --primary-color:#A82C48;
+    --scenday-color:#43121d;
+    --third-color:#f98169;
+    --white-color:#fff;
+    --text-color:#555;
+    --tex-grey:#999;
+    --black-color:#000;
+    --primary-font:'Roboto',sans-serif;
+    --secondary-font:'Quicksand'sans-serif;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family:var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+}
+
+::-webkit-scrollbar{
+    width:0.625rem;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--white-color);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+}
+h1{
+    margin-top:10px;
+    font-size:3rem;
+    font-weight: 900;
+    color:var(--scenday-color)
+}
+.main-btn{
+    display: inline-block;
+    padding: 0.68rem 1.85rem  ;
+    line-height: 1.5625rem;
+    background-color: var(--primary-color);
+    border:0.1875rem solid var(--primary-color);
+    color:white;
+    font-size: 0.9175rem;
+    font-weight: 600;
+    text-transform:capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0/19%);
+    -webkit-transform: all .4s ease-out 0s;
+    -o-transform: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+
+.white-btn{
+    display: inline-block;
+    padding: 0.68rem 1.85rem  ;
+    line-height: 1.5625rem;
+    background-color:white;
+    border:0.1875rem solid var(--primary-color);
+    color:var(--primary-color);
+    font-size: 0.9175rem;
+    font-weight: 600;
+    text-transform:capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0/19%);
+    -webkit-transform: all .4s ease-out 0s;
+    -o-transform: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+.main-btn:hover{
+    background-color: transparent;
+    color:var(--primary-color);
+}
+.white-btn:hover{
+    background-color: var(--primary-color);
+    border-color:var(--primary-color);
+    color:var(--white-color);
+}
+.wrapper{
+    padding-top: 8.25rem;
+    padding-bottom:8.25rem;
+}
+.tex-content{
+    width: 70%;
+    margin: auto;
+}
+.navication-wrap{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 10000;
+    transition:all 0.3s ease-out;
+}
+.navication-wrap .nav-item{
+    position:0 0.625rem;
+    transition: all 200ms linear;
+}
+.navbar-toggler:focus{
+    outline: unset;
+    border:unset;
+    box-shadow: none;
+}
+
+.nav-link{
+    font-size:0.9075rem;
+    font-weight: 600;
+    text-transform:capitalize;
+    color:var(--primary-color);
+    letter-spacing: 1px;
+}
+.navication-wrap .main-btn{
+    padding:0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
+}
+.navication-wrap.scroll-on{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0,0,0,0.9);
+    transition: all .15s ease-in-out 0s;
+}
+.top-banner{
+    width: 100%;
+    background:url(../images/bg/bg-1.jpg);
+    background-size: cover;
+    padding: 15.875rem 0 5.375rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.logoimo{
+    width: 86px;
+  height: 53px;
+}
+p{
+    font-size: 1rem;
+    color:var(--text-color);
+    line-height: 1.75rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.counter-section{
+    background-color: var(--primary-color);
+    padding: 2.5rem 0;
+}
+.counter-section p{
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+h2{
+    color:white;
+}
+.explore_foods .card{
+    border: none;
+    background-color: transparent;
+    border-radius: 0.9375rem;
+}
+.explore_foods .card img{
+    border-radius: 0.9375rem;
+    object-fit: cover;
+}
+.explore_foods .card span{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color:var(--primary-color);
+    padding-bottom: 1rem;
+    border-bottom: 0.0625rem solid #eee;
+}
+.explore_foods .card span del{
+    color: var(--tex-grey);
+    margin-left: 0.5rem;
+}
+.testmunium-section{
+    background-color: var(--primary-color);
+    padding-bottom: 68px;
+}
+.testmunium-section .carousel-item {
+    margin-top: 2rem;
+    padding:5rem 3.325rem;
+    background-color: var(--white-color);
+    border-radius: 0.9375rem;
+    text-align: center;
+}
+.testmunium-section .carousel-item img{
+    max-width: 10rem;
+    border-radius: 50%;
+    margin:0 auto;
+}
+.h2img{
+    color:var(--primary-color);
+    text-transform: uppercase;
+}
+.h2f{
+    color:var(--primary-color);
+}
+.h2f span{
+    color: var(--primary-color);
+    font-size: 2.325rem;
+    margin-right: 0.325rem;
+}
+.book-food{
+    width: 100%;
+    background: url("../images/bg/bg-3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:0 71.9125rem;
+    padding: 0.375rem 0;
+}
+.newsleter{
+    width:60%;
+    margin:0 auto;
+}
+.newsleter .form-control{
+    height:3.225rem;
+    padding:0 1.25rem;
+    font-size: 0.875rem;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    border:0.1875rem solid var(--tex-grey);
+    color: var(--black-color);
+    font-weight: 700;
+}
+.newsleter .form-control:hover{
+    box-shadow: none;
+    outline: none;
+    border-color:var(--primary-color);
+}
+.footer{
+    background: var(--primary-color);
+}
+.footer .footer-link{
+    font-size: 1rem;
+    color:var(--white-color);
+    padding: 0 1.875rem;
+    text-decoration: none;
+}
+.footer .footer-link:hover{
+    color: var(--white-color)!important;
+}
+.icon{
+    font-size: 1.5rem;
+    color: var(--white-color);
+    padding: 0 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
